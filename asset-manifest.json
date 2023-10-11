@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Plan-With-Vikash-React/static/css/main.485ca221.css",
+    "main.js": "/Plan-With-Vikash-React/static/js/main.788da764.js",
+    "index.html": "/Plan-With-Vikash-React/index.html",
+    "main.485ca221.css.map": "/Plan-With-Vikash-React/static/css/main.485ca221.css.map",
+    "main.788da764.js.map": "/Plan-With-Vikash-React/static/js/main.788da764.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.485ca221.css",
+    "static/js/main.788da764.js"
+  ]
+}
