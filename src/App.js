@@ -13,20 +13,20 @@ const App = () => {
 
   if(tours.length === 0 ) {
     return (
-      <div className="refresh">
+      <section className="refresh">
         <h2>No Tours Left</h2>
         <button className="refresh-btn" onClick={() => setTours(data)}>
           Refresh
         </button>
         <img src={Fave} alt="Logo"></img>
-      </div>
+      </section>
     );
   }
 
   return (
-    <div>
+    <section>
       <Tours tours={tours} removeTour={removeTour}></Tours>
-    </div>
+    </section>
   )
 }
 

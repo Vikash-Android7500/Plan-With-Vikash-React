@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Card_Style from '../Componanets/Card_Style.css'
+import '../Componanets/CardStyle.css'
 
 function Card({ id, image, info, price, name, removeTour }) {
   const [readmore, setReadmore] = useState(false);
@@ -10,27 +10,27 @@ function Card({ id, image, info, price, name, removeTour }) {
   }
 
   return (
-    <div className="card">
+    <main className="card">
       <img src={image} className="image"></img>
 
-      <div className="tour-info">
-        <div className="tour-details">
-          <h4 className="tour-price">₹ {price}</h4>
-          <h4 className="tour-name">{name}</h4>
-        </div>
+      <section className="tour-info">
+        <section className="tour-details">
+          <span className="tour-price">₹ {price}</span>
+          <h1 className="tour-name">{name}</h1>
+        </section>
 
-        <div className="description">
+        <section className="description">
           {description}
           <span className="read-more" onClick={readmoreHandler}>
             {readmore ? `Show Less` : `Read \More`}
           </span>
-        </div>
-      </div>
+        </section>
+      </section>
 
       <button className="btn-red" onClick={() => removeTour(id)}>
         Not Interested
       </button>
-    </div>
+    </main>
   );
 }
 
